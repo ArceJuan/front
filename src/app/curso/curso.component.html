@@ -1,0 +1,25 @@
+<div class="card border-primary mb-3">
+    <div class="card-header">Cursos</div>
+    <div class="card-body text-primary">
+      <h3 class="card-title">Listado de Cursos</h3>
+  
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>nombre</th>
+            <th>creditos</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let curso of cursos">
+            <td>{{ curso.id }}</td>
+            <td>{{ curso.nombre }}</td>
+            <td>{{ curso.creditos }}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+    </div>
+  </div>
